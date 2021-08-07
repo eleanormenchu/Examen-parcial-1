@@ -1,0 +1,26 @@
+public class Entrenador extends IntegrantesSeleccion
+{
+    private Integer idFederacion;
+    
+    public Entrenador() {
+    }
+    
+    public Entrenador(final Integer id, final String nombres, final String apellidos, final Integer edad, final Integer idFederacion) {
+        super(id, nombres, apellidos, edad);
+        this.idFederacion = idFederacion;
+    }
+    
+    public void dirigirPartido() {
+    }
+    
+    public void dirigirEntreno() {
+    }
+    
+    public Integer getIdFederacion() {
+        return this.idFederacion;
+    }
+    
+    public void setIdFederacion(final Integer idFederacion) {
+        this.idFederacion = idFederacion;
+    }
+}

@@ -1,0 +1,33 @@
+public class Masajista extends IntegrantesSeleccion
+{
+    private String titulacion;
+    private Integer a\u00f1osExperiencia;
+    
+    public Masajista() {
+    }
+    
+    public Masajista(final Integer id, final String nombres, final String apellidos, final Integer edad, final String titulacion, final Integer a\u00f1osExperiencia) {
+        super(id, nombres, apellidos, edad);
+        this.titulacion = titulacion;
+        this.a\u00f1osExperiencia = a\u00f1osExperiencia;
+    }
+    
+    public void darMasaje() {
+    }
+    
+    public String getTitulacion() {
+        return this.titulacion;
+    }
+    
+    public void setTitulacion(final String titulacion) {
+        this.titulacion = titulacion;
+    }
+    
+    public Integer getA\u00f1osExperiencia() {
+        return this.a\u00f1osExperiencia;
+    }
+    
+    public void setA\u00f1osExperiencia(final Integer a\u00f1osExperiencia) {
+        this.a\u00f1osExperiencia = a\u00f1osExperiencia;
+    }
+}

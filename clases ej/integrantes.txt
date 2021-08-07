@@ -1,0 +1,57 @@
+public class IntegrantesSeleccion
+{
+    private Integer id;
+    private String nombres;
+    private String apellidos;
+    private Integer edad;
+    
+    public IntegrantesSeleccion() {
+    }
+    
+    public IntegrantesSeleccion(final Integer id, final String nombres, final String apellidos, final Integer edad) {
+        this.edad = id;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.edad = edad;
+    }
+    
+    public void concentrarse() {
+        System.out.println("Concentrase");
+    }
+    
+    public void viajar() {
+        System.out.println("Viajando");
+    }
+    
+    public Integer getId() {
+        return this.id;
+    }
+    
+    public void setId(final Integer id) {
+        this.id = id;
+    }
+    
+    public String getNombres() {
+        return this.nombres;
+    }
+    
+    public void setNombres(final String nombres) {
+        this.nombres = nombres;
+    }
+    
+    public String getApellidos() {
+        return this.apellidos;
+    }
+    
+    public void setApellidos(final String apellidos) {
+        this.apellidos = apellidos;
+    }
+    
+    public Integer getEdad() {
+        return this.edad;
+    }
+    
+    public void setEdad(final Integer edad) {
+        this.edad = edad;
+      }
+  }
