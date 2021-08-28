@@ -1,0 +1,47 @@
+public class Carro {
+    private int id;
+    private String año;
+    private String marca;
+    private String placa;
+
+    public Carro(int id, String año, String marca, String linea, String placa) {
+        this.id = id;
+        this.año = año;
+        this.marca = marca;
+        this.placa = placa;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAño() {
+        return año;
+    }
+
+    public void setAño(String año) {
+        this.año = año;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+    
+    
+}

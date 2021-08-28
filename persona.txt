@@ -1,0 +1,90 @@
+public class Persona {
+    public static Scanner sc = new Scanner(System.in);
+    protected String nombre;
+    protected String apellido;
+    protected int edad;
+    protected long DPI;
+    protected int teléfono;
+    protected String email;
+    protected String contraseña;
+
+    public Persona(String nombre, String apellido, int edad, long DPI, int teléfono, String email, String contraseña) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.DPI = DPI;
+        this.cel = teléfono;
+        this.email = email;
+        this.contra = contraseña;
+    }
+
+
+
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public long getDPI() {
+        return DPI;
+    }
+
+    public void setDPI(long DPI) {
+        this.DPI = DPI;
+    }
+
+
+    public int gettelefono() {
+        return teléfono;
+    }
+
+    public void setteléfono(int teléfono) {
+        this.teléfono = teléfono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public static Scanner getSc() {
+        return sc;
+    }
+
+    public static void setSc(Scanner sc) {
+        Persona.sc = sc;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContra(String contraseña) {
+        this.contraseña = contraseña;
+    }
+    
+    
+}

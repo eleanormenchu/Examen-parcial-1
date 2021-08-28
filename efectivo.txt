@@ -1,0 +1,10 @@
+public class Efectivo extends Pago {
+
+    public Efectivo(int monto, String nombre) {
+        super(monto, nombre);
+    }
+
+    public void datosef(){
+        System.out.println("Ingrese el monto: "); monto = sc.nextInt();
+    }
+}

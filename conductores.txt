@@ -1,0 +1,42 @@
+public class Conductor extends Persona {
+    private String tipoLicencia;
+
+    public Conductor(String tipoLicencia, String nombre, String apellido, int edad, long DPI, int telefono, String email, String contraseña) {
+        super(nombre, apellido, edad, DPI, telefono, email, contraseña);
+        this.tipoLicencia = tipoLicencia;
+    }
+
+
+
+    public void datoscondu(){
+         System.out.println("Ingrese su nombre: "); nombre = sc.next();
+        System.out.println("Ingrese su apellido: "); apellido = sc.next();
+        System.out.println("Ingrese su edad: "); edad = sc.nextInt();
+        System.out.println("Ingrese su número de DPI: "); DPI = sc.nextLong();
+        System.out.println("Ingrese su número de teléfono: "); telefono = sc.nextInt();
+        System.out.println("Ingrese su tipo de licencia: "); tipoLicencia = sc.next();
+        System.out.println("Ingrese su correo de registro: "); email = sc.next();
+        System.out.println("Ingrese su contraseña: "); contraseña = sc.next();
+    }
+    public void condu1(){
+        System.out.println("Eleanor Menchú \nTipo de licencia A");
+    }
+    public void condu2(){
+        System.out.println("David Orrego \nTipo de licencia B");
+    }
+    public void codu3(){
+        System.out.println("Juana de Arco \nTipo de licencia C");
+    }
+    public void condu4(){
+        System.out.println("Thomas Hobbes \nTipo de licencia A");
+    }
+    public String getTipoLicencia() {
+        return tipoLicencia;
+    }
+
+    public void setTipoLicencia(String tipoLicencia) {
+        this.tipoLicencia = tipoLicencia;
+    }
+    
+    
+}
