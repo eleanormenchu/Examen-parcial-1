@@ -1,0 +1,48 @@
+import usuario.usuario;
+import usuario.conductores;
+import java.util.Scanner;
+import destino.efectivo;
+import destino.tarjeta;
+import destino.viaje;
+
+
+public class principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        conductores Trabajador = new conductores("A", "Eleanor, "Menchú",34, 8, "academia", "elimil1");
+        
+        int variable_seleccionar;
+        System.out.println("Seleccionar"
+                + " ingresar como conductor o como cliente"
+                + " conductor (1), cliente (2)");
+        variable_seleccion = sc.nextInt();
+        
+        if (variable_seleccionar == 1){
+           Trabajador.registrar_trabajador();
+        } else if (variable_seleccion == 2){
+            ingreso_cliente();
+        }
+    }
+    public static void ingreso_cliente(){
+         cliente Cliente = new cliente("Fernando", "Salazar", 34, 8, "academia");
+    destino Viaje = new destino("Zona 4", "Barcenas");
+    tarjeta = tarjeta(134, 678727229, "Fernando", 472471, 889);
+    efectivo = new efectivo(100);
+    
+            int variable_seleccion;
+        Cliente.ingresar_cliente();
+        Viaje.destino();
+        System.out.println("Ha llegado a su destino");
+        System.out.println("Elija metodo de pago: presione 1 para tarjeta \nPresione 2 para efectivo");
+        variable_seleccion = sc.nextInt();
+        if(variable_seleccion == 1){
+            tarjeta.tarjeta();
+        } else if (variable_seleccion == 2){
+            efectivo.pagar();
+        }
+    }
+    }
